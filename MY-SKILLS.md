@@ -6,6 +6,7 @@ Everything below lives in this repo too, but the install commands pull the lates
 | Skill | What it does | Install |
 |---|---|---|
 | **archify** | Codebase / system description → interactive architecture, workflow, sequence, dataflow, lifecycle diagrams (self-contained HTML + PNG/SVG/WebM export). Source: [tt-a1i/archify](https://github.com/tt-a1i/archify) | `npx -y skills add tt-a1i/archify -g -y` |
+| **garden-skills** (ConardLi) | 5 skills: `web-design-engineer` (25 style recipes, anti-cliché design), `web-video-presentation` (script → click-driven 16:9 web video w/ 23 themes + TTS), `gpt-image-2` (image prompt templates), `beautiful-article` (URL/PDF → single-file HTML article), `kb-retriever` (local knowledge-base Q&A). Source: [ConardLi/garden-skills](https://github.com/ConardLi/garden-skills). Backup in `garden-skills/` | `npx -y skills add ConardLi/garden-skills -g -y` (ignore the PromptScript errors — Claude Code symlinks are created) |
 | remotion-best-practices | Official Remotion video-in-React guidance | copy `remotion-skills-external/` into `~/.claude/skills/` |
 | awesome-claude-skills (rest of this repo) | Composio + document + design skills | copy the folder you need into `~/.claude/skills/<name>/` |
 
