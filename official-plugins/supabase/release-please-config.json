@@ -1,0 +1,86 @@
+{
+  "bump-minor-pre-major": true,
+  "bump-patch-for-minor-pre-major": true,
+  "packages": {
+    ".": {
+      "release-type": "simple",
+      "extra-files": [
+        {
+          "type": "json",
+          "path": ".claude-plugin/plugin.json",
+          "jsonpath": "$.version"
+        },
+        {
+          "type": "json",
+          "path": ".cursor-plugin/plugin.json",
+          "jsonpath": "$.version"
+        },
+        {
+          "type": "json",
+          "path": ".codex-plugin/plugin.json",
+          "jsonpath": "$.version"
+        },
+        {
+          "type": "json",
+          "path": ".kimi-plugin/plugin.json",
+          "jsonpath": "$.version"
+        },
+        {
+          "type": "json",
+          "path": ".grok-plugin/plugin.json",
+          "jsonpath": "$.version"
+        },
+        {
+          "type": "json",
+          "path": ".github/plugin/plugin.json",
+          "jsonpath": "$.version"
+        },
+        {
+          "type": "json",
+          "path": ".plugin/plugin.json",
+          "jsonpath": "$.version"
+        },
+        {
+          "type": "json",
+          "path": "gemini-extension.json",
+          "jsonpath": "$.version"
+        },
+        {
+          "type": "json",
+          "path": "agents/claude/.mcp.json",
+          "jsonpath": "$.mcpServers.supabase.headers[\"X-Source-Version\"]"
+        },
+        {
+          "type": "json",
+          "path": "agents/cursor/mcp.json",
+          "jsonpath": "$.supabase.headers[\"X-Source-Version\"]"
+        },
+        {
+          "type": "json",
+          "path": ".kimi-plugin/plugin.json",
+          "jsonpath": "$.mcpServers.supabase.headers[\"X-Source-Version\"]"
+        },
+        {
+          "type": "json",
+          "path": "agents/grok/mcp.json",
+          "jsonpath": "$.mcpServers.supabase.headers[\"X-Source-Version\"]"
+        },
+        {
+          "type": "json",
+          "path": "agents/copilot/.mcp.json",
+          "jsonpath": "$.mcpServers.supabase.headers[\"X-Source-Version\"]"
+        },
+        {
+          "type": "json",
+          "path": "agents/open-plugin/.mcp.json",
+          "jsonpath": "$.mcpServers.supabase.headers[\"X-Source-Version\"]"
+        },
+        {
+          "type": "json",
+          "path": "gemini-extension.json",
+          "jsonpath": "$.mcpServers.supabase.headers[\"X-Source-Version\"]"
+        }
+      ]
+    }
+  }
+}
