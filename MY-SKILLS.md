@@ -32,6 +32,33 @@ done
 
 Browse the other ~280 plugins with `/plugin > Discover`.
 
+
+## Marketing / growth skill packs (picked from VoltAgent/awesome-agent-skills)
+Installed 2026-08-26 — ~510 skills added to `~/.claude/skills/` (905 → 1,417). Source snapshots in `marketing-skills/`.
+
+```
+for r in nowork-studio/NotFair gooseworks-ai/goose-skills aaron-he-zhu/aaron-marketing-skills \
+         coreyhaines31/marketingskills sergebulaev/linkedin-skills blader/humanizer \
+         MohamedAbdallah-14/unslop CosmoBlk/email-marketing-bible gokapso/agent-skills Eronred/aso-skills; do
+  npx -y skills add $r -g -y
+done
+```
+
+| Repo | Skills | Why |
+|---|---|---|
+| nowork-studio/NotFair | 45 | SEO + GEO + Google Ads + Meta Ads audits/builders |
+| gooseworks-ai/goose-skills | 257 | Growth/GTM: ads, content, funnels, prospecting, `render-*` video ads, fal/elevenlabs creation |
+| aaron-he-zhu/aaron-marketing-skills | 120 | Narrative/positioning/launch/creator marketing |
+| coreyhaines31/marketingskills | 50 | Copywriting, CRO, pricing, launch, cold-email, ads, ai-seo |
+| sergebulaev/linkedin-skills | 1 | `linkedin-marketing` — viral hooks / posting |
+| blader/humanizer | 1 | Strip AI-writing tells |
+| MohamedAbdallah-14/unslop | 6 | `unslop*` — de-slop text, files, commits, reviews |
+| CosmoBlk/email-marketing-bible | 1 | 55k-word email marketing guide |
+| gokapso/agent-skills | 3 | `integrate/automate/observe-whatsapp` (Kapso) |
+| Eronred/aso-skills | 39 | App Store / Play Store optimisation |
+
+Reviewed and skipped: K-Dense scientific-agent-skills (pure science), rest of the awesome list (cloud/enterprise/langs).
+
 ## After installing
 - Restart Claude Code (or open a new session) so `/archify` shows up under `/skills`.
 - Verify: `node ~/.claude/skills/archify/bin/archify.mjs doctor`

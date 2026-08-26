@@ -1,0 +1,22 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "notfair",
+  "version": "0.27.1",
+  "description": "Operate ads and analytics, and run open-source SEO, GEO, and content workflows from compatible AI agents.",
+  "author": {
+    "name": "NotFair",
+    "url": "https://notfair.co"
+  },
+  "keywords": [
+    "advertising",
+    "analytics",
+    "google-ads",
+    "meta-ads",
+    "marketing",
+    "seo",
+    "geo"
+  ],
+  "license": "MIT",
+  "homepage": "https://notfair.co",
+  "repository": "https://github.com/nowork-studio/notfair-plugin"
+}

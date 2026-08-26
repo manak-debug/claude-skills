@@ -1,0 +1,22 @@
+{
+  "name": "notfair",
+  "displayName": "NotFair",
+  "version": "0.27.1",
+  "description": "The official ads, analytics, SEO, and GEO plugin from NotFair.",
+  "author": {
+    "name": "NotFair"
+  },
+  "homepage": "https://notfair.co",
+  "repository": "https://github.com/nowork-studio/notfair-plugin",
+  "license": "MIT",
+  "keywords": [
+    "advertising",
+    "analytics",
+    "google-ads",
+    "marketing",
+    "seo"
+  ],
+  "logo": "assets/notfair-icon.svg",
+  "skills": "./skills/",
+  "mcpServers": "./mcp.json"
+}
