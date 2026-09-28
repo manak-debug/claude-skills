@@ -1,5 +1,21 @@
 # My Claude Code skills — re-install checklist
 
+## New laptop — one command
+1. Install Claude Code and log in (the claude.ai account brings its own synced skills and connectors).
+2. Run:
+   ```
+   git clone https://github.com/manak-debug/claude-skills.git && cd claude-skills && bash install.sh
+   ```
+   This copies every skill in `skills-manifest.txt` (the exact set on the main laptop, ~1,419) into `~/.claude/skills/`
+   and installs the 7 official plugins. Safe to run twice. Restart Claude Code afterwards.
+
+## Keeping this repo up to date (main laptop)
+After installing a new skill: `bash backup.sh`, check the new folder under `my-local-skills/` has no keys
+(this repo is PUBLIC), then commit and push. `backup.sh` rewrites `skills-manifest.txt` to match the laptop.
+
+Not covered here: `~/.claude/hooks` (scope-lock hooks), `~/.claude/settings.json`, memory and MCP connections.
+
+
 Skills I have installed on my machine that must be re-installed on any new machine / fresh Claude Code setup.
 Everything below lives in this repo too, but the install commands pull the latest version.
 
@@ -8,6 +24,8 @@ Everything below lives in this repo too, but the install commands pull the lates
 | **archify** | Codebase / system description → interactive architecture, workflow, sequence, dataflow, lifecycle diagrams (self-contained HTML + PNG/SVG/WebM export). Source: [tt-a1i/archify](https://github.com/tt-a1i/archify) | `npx -y skills add tt-a1i/archify -g -y` |
 | **garden-skills** (ConardLi) | 5 skills: `web-design-engineer` (25 style recipes, anti-cliché design), `web-video-presentation` (script → click-driven 16:9 web video w/ 23 themes + TTS), `gpt-image-2` (image prompt templates), `beautiful-article` (URL/PDF → single-file HTML article), `kb-retriever` (local knowledge-base Q&A). Source: [ConardLi/garden-skills](https://github.com/ConardLi/garden-skills). Backup in `garden-skills/` | `npx -y skills add ConardLi/garden-skills -g -y` (ignore the PromptScript errors — Claude Code symlinks are created) |
 | remotion-best-practices | Official Remotion video-in-React guidance | copy `remotion-skills-external/` into `~/.claude/skills/` |
+| **motion-canvas** | Motion Canvas (TypeScript, generator-based animation) setup + ESM workaround + references. Source: [davila7/claude-code-templates](https://github.com/davila7/claude-code-templates/tree/main/cli-tool/components/skills/video/motion-canvas) (docs only, no scripts) | in `my-local-skills/motion-canvas` (installed by `install.sh`) |
+| **revideo** | Revideo (Motion Canvas fork) — concept → scenes → MP4 rendered headless with `renderVideo()`; written 2026-09-29 from the official docs | in `my-local-skills/revideo` (installed by `install.sh`) |
 | awesome-claude-skills (rest of this repo) | Composio + document + design skills | copy the folder you need into `~/.claude/skills/<name>/` |
 
 
